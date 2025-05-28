@@ -24,10 +24,6 @@ event-booking-api/
 ├── server.js
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🚀 Getting Started
@@ -38,16 +34,11 @@ Edit
 git clone https://github.com/adelie/event-booking-api.git
 cd event-booking-api
 2. Install dependencies
-bash
-Copy
-Edit
+
 npm install
 3. Configure environment variables
 Create a .env file in the root folder:
 
-ini
-Copy
-Edit
 PORT=3000
 DATABASE_URL=postgres://<username>:<password>@localhost:5432/eventdb
 JWT_SECRET=your_secret_key
@@ -83,16 +74,6 @@ POST	/api/bookings/:eventId	Book a seat in an event
 🧪 Sample Request with Token
 Make sure to include the token in your request header like this:
 
-http
-Copy
-Edit
 Authorization: Bearer <your_token>
 🧑‍💻 Admin Access
 To create an admin, you can manually insert a user in your DB with the role set to "admin" or modify the registration controller for development purposes.
-
-📃 License
-This project is open-source and available under the MIT License.
-
-yaml
-Copy
-Edit
